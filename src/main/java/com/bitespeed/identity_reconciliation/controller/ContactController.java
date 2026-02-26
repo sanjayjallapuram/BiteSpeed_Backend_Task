@@ -27,7 +27,7 @@ public class ContactController {
         return service.identify(request);
     }
 
-    @GetMapping()
+    @GetMapping
     public List<Contact> getAll() {
         return contactRepository.findAll();
     }
